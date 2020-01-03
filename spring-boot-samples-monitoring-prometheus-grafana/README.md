@@ -1,5 +1,13 @@
 # 使用 Prometheus & Grafana 监控你的 Spring Boot 应用
 
+## 步骤
+
++ 修改prometheus.yml IP和端口（app的端口），并复制到/etc/prometheus/config.yml
++ 启动app
++ docker-compose启动prometheus和grafana
++ grafana配置数据源（prometheus地址）和Dashboard
+
+
 ## 准备工作
 
 + Prometheus `v2.14.0`
