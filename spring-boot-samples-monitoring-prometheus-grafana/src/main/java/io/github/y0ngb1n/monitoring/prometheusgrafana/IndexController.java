@@ -38,4 +38,12 @@ public class IndexController {
   //  counter.labels(request.getRequestURI(), request.getMethod(),200+"").inc();
   }
 
+  @GetMapping
+  public void index2(HttpServletRequest request) {
+    log.info("aa2");
+    requestCounter.labels(request.getRequestURI(), request.getMethod()).inc();
+    //  counter.labels(request.getRequestURI(), request.getMethod(),200+"").inc();
+  }
+
+
 }
