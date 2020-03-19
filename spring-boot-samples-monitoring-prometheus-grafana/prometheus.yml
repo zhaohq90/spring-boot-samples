@@ -1,6 +1,6 @@
 scrape_configs:
   # 任意写，建议英文，不要包含特殊字符
-  - job_name: 'spring-boot-app'
+  - job_name: 'spring-boot-app2'
     # 多久采集一次数据
     scrape_interval: 15s
     # 采集时的超时时间
@@ -10,3 +10,8 @@ scrape_configs:
     # 采集服务的地址，设置成 Spring Boot 应用所在服务器的具体地址
     static_configs:
             - targets: ['47.97.158.62:8081']
+            
+  - job_name: 'pushgateway'
+    metrics_path: '/metrics'
+    static_configs:
+            - targets: ['47.97.158.62:9091']
