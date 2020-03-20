@@ -30,6 +30,29 @@
       <groupId>io.micrometer</groupId>
       <artifactId>micrometer-registry-prometheus</artifactId>
     </dependency>
+
+    <!--普罗米修斯依赖-->
+    <dependency>
+      <groupId>io.prometheus</groupId>
+      <artifactId>simpleclient_spring_boot</artifactId>
+      <version>0.8.0</version>
+    </dependency>
+    <dependency>
+      <groupId>io.prometheus</groupId>
+      <artifactId>simpleclient_hotspot</artifactId>
+      <version>0.8.0</version>
+    </dependency>
+    <dependency>
+      <groupId>io.prometheus</groupId>
+      <artifactId>simpleclient_servlet</artifactId>
+      <version>0.8.0</version>
+    </dependency>
+    <dependency>
+      <groupId>io.prometheus</groupId>
+      <artifactId>simpleclient_pushgateway</artifactId>
+      <version>0.8.0</version>
+    </dependency>
+
   </dependencies>
 
 </project>
