@@ -56,7 +56,7 @@ public class Trans2Controller {
   public void reset() {
     baiduBceTodayGauge.set(0);
     try {
-      pushGateway.push(registry, "BaiduBceTodayCount", groupingKey);
+      pushGateway.push(baiduBceTodayGauge, "BaiduBceTodayCount", todayGroupingKey);
     } catch (Exception e) {
       log.error("xxxx重置失败", e);
     }
